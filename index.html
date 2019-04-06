@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Ravindra Dhore">
+
+  <title>Official Training</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <!--Logo Section-->
+      <div class="logo">
+          <a title="" class="navbar-brand js-scroll-trigger" href="#page-top">Logo</a>
+      </div>
+
+      <!--Nav Toggle for devices -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#html-section">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#css-section">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#bootstrap-section">Bootstrap</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HTML5 Video implementation -->
+  <header class="bg-primary text-white banner-container" id="video-section">
+    <div class="text-center">
+          <video width="100%" controls autoplay loop>
+            <source src="images/small.mp4" type="video/mp4">
+            <source src="images/small.ogg" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="banner-text">
+            <h1>Welcome</h1>
+            <p class="lead">A landing page template</p>
+          </div>
+    </div>
+  </header>
+
+  <!--Floating menu-->
+  <aside>
+    <ul>
+      <li><a class="js-scroll-trigger" href="#video-section">HTML5 Video</a></li>
+      <li><a class="js-scroll-trigger" href="#formvalidation-section">Form Validation</a></li>
+      <li><a class="js-scroll-trigger" href="#svg-section">SVG</a></li>
+      <li><a class="js-scroll-trigger" href="#geolocation-section">Geolocation</a></li>
+      <li><a class="js-scroll-trigger" href="#audio-section">HTML5 Audio</a></li>
+    </ul>
+  </aside>
+
+  <!--Form validation-->
+  <section id="formvalidation-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Form Validation</h2>
+          <form class="form-horizontal" action="" method="post">
+            <fieldset>
+                <legend>Railway Ticket Booking Details</legend>
+                <div class="form-group">
+                    <label class="control-label" for="name">Name:</label>
+                    <input class="form-control" id="name" name="name" value="" required  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" aria-required="true" aria-describedby="name-format">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="email">Email:</label>
+                    <input class="form-control" type="email" id="email" name="email" value="" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="website">Website:</label>
+                    <input class="form-control" type="url" id="website" name="website" value="">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="numTickets">No. of Tickets:</label>
+                    <input class="form-control" type="number" id="numTickets" name="numTickets" value="" required aria-required="true" min="1" max="4">
+                </div>
+                <div class="submit">
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SVG implementation-->
+  <section id="svg-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>SVG Section</h2>
+          <div class="svg-wrapper">
+              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape" height="60" width="320" />
+              </svg>
+               <div class="text">HOVER</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Geolocation Implementation-->
+  <section id="geolocation-section" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Geolocation Section</h2>
+            <p id = 'mapdiv'></p>
+		<button onclick="geoloc()">
+			show current location
+		</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--Audio Implementation-->
+  <section id="audio-section" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <h2>HTML5 Audio implementation</h2>
+            <audio controls>
+                <source src="images/sampleaudio.ogg" type="audio/ogg">
+                <source src="images/sampleaudio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Designed by Ravindra</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/custom.js"></script>
+
+  <!-- Geolocation script file -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+</body>
+
+</html>
+

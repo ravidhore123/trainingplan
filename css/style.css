@@ -1,0 +1,135 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+section {
+    padding: 150px 0;
+    height: 100%;
+  }
+  a {
+    outline: 0; text-decoration: none;
+   }
+ 
+   a:hover {
+     outline: 0; text-decoration: none;
+    }
+
+/**Floating menu CSS**/
+    aside {
+    position: fixed;
+top: 0;
+right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;    z-index: 1;
+}
+aside li {
+    list-style: none;
+padding-right: 40px;
+text-align: right;
+position: relative;
+}
+aside ul {
+    margin: 0;padding: 0;
+}
+aside a {
+    color: #000;
+}
+aside a:hover {
+    color: orangered;
+}
+aside li:hover :after {
+    background: orangered !important;
+}
+aside a:after {
+    display: inline-block;
+content: "";
+width: 12px;
+height: 12px;
+background: #000;
+border-radius: 100%;
+position: absolute;
+right: 15px;
+top: 5px;
+}
+
+/* Geolocation CSS */
+#mapdiv {
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	height: 500px;
+}
+
+/* SVG Animation CSS */
+.svg-wrapper {
+    height: 60px;
+      margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+  }
+  
+  .text {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    text-align: center;
+    top: -48px;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
+
+  
+/*Banner CSS*/
+   .banner-text{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 100%;
+   }
+   .banner-text h1 {
+       display: block;
+   }
+   .banner-container {
+       max-height: 400px;overflow: hidden;position: relative;
+   }
+  
+  /* Welcom page css*/
+  .welcome-section {
+    padding: 150px;
+  }
